@@ -15,31 +15,41 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public int saveUserServic(Employee employee) {
 		// TODO Auto-generated method stub
-		return 0;
+		int saveUserDao = employeeDao.saveUserDao();
+		
+		return saveUserDao;
 	}
 
 	@Override
 	public List<Employee> getAllUserServices() {
 		// TODO Auto-generated method stub
-		return null;
+		List<Employee> allUserDao = employeeDao.getAllUserDao();
+		
+		return allUserDao;
 	}
 
 	@Override
 	public Employee loginCheck(String userName, String password) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		Employee loginCheckDao = employeeDao.loginCheckDao(userName, password);
+		return loginCheckDao;
 	}
 
 	@Override
 	public Employee updateUser(Employee employee) {
 		// TODO Auto-generated method stub
-		return null;
+		Employee updateUserDao = employeeDao.updateUserDao(employee);
+		
+		return updateUserDao;
 	}
 
 	@Override
 	public String deleteEmployee(int id) {
 		// TODO Auto-generated method stub
-		return null;
+		String deleteEmployeeDao = employeeDao.deleteEmployeeDao(id);
+		
+		return deleteEmployeeDao;
 	}
 
 }
