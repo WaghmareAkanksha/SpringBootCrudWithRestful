@@ -3,10 +3,13 @@ package com.Infosys.SpringBootCrudWithRestful.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.Infosys.SpringBootCrudWithRestful.dao.EmployeeDao;
 import com.Infosys.SpringBootCrudWithRestful.model.Employee;
 
+
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired
