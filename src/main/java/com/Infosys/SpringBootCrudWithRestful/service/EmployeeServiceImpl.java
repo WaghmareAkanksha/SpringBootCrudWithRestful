@@ -15,7 +15,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public int saveUserServic(Employee employee) {
 		// TODO Auto-generated method stub
-		int saveUserDao = employeeDao.saveUserDao();
+		int saveUserDao = employeeDao.saveUserDao(employee);
 		
 		return saveUserDao;
 	}

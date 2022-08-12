@@ -6,7 +6,7 @@ import com.Infosys.SpringBootCrudWithRestful.model.Employee;
 
 public interface EmployeeDao 
 {
-    public int saveUserDao();
+    public int saveUserDao(Employee employee);
     
     public List<Employee> getAllUserDao();
     
